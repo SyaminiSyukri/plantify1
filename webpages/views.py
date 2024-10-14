@@ -12,5 +12,5 @@ def categories(request):
 def community(request):
     return render(request, 'webpages/community.html')
 
-def signout(request):
+def welcome(request):
     return render(request, 'webpages/welcome.html')
