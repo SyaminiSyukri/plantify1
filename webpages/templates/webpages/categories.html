@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Categories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <script>
+    function toggleMenu() {
+      document.getElementById('dropdownMenu').classList.toggle('hidden');
+    }
+  </script>
+
+</head>
+
+<body class="bg-[#B1E09C] h-screen flex flex-col justify-between">
+  <!-- Header -->
+  <header class="bg-[#B1E09C] flex items-center justify-between p-4">
+    <a href="#"><img alt="Plant logo" class="h-10" height="100" src="assets/logo.png" width="40" /></a>
+    <a href="#">
+      <h1 class="text-black font-bold text-2xl">Plantify</h1>
+    </a>
+    <i class="fas fa-bars text-xl cursor-pointer" onclick="toggleMenu()"></i>
+  </header>
+  <!-- Dropdown Menu -->
+  <div class="absolute top-20 right-5 bg-white shadow-md rounded-lg hidden w-60 z-10" id="dropdownMenu">
+    <ul class="p-6">
+      <li class="py-5">
+        <a class="text-black" href="index.html">
+          Home
+        </a>
+      </li>
+      <li class="py-5">
+        <a class="text-black" href="categories.html">
+          Categories
+        </a>
+      </li>
+      <li class="py-5">
+        <a class="text-black" href="community.html">
+          Community
+        </a>
+      </li>
+      <li class="py-5">
+        <a class="text-black" href="bookmark.html">
+          Bookmark
+        </a>
+      </li>
+      <li class="py-5">
+        <a class="text-black" href="welcome.html">
+          Sign Out
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow bg-white flex-grow p-4">
+    <div class="flex items-center mb-4">
+      <a href="index.html"><i class="fas fa-arrow-left">
+        </i></a>
+      <h1 class="text-2xl font-bold mx-auto">
+        Categories
+      </h1>
+    </div>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Flowers" class="h-12 w-12 mb-2" height="50" src="assets/flower.png" width="50" />
+        <span>
+          Flowers
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Trees" class="h-12 w-12 mb-2" height="50" src="assets/tree.png" width="50" />
+        <span>
+          Trees
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Herbs" class="h-12 w-12 mb-2" height="50" src="assets/herbs.png" width="50" />
+        <span>
+          Herbs
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Shrubs" class="h-12 w-12 mb-2" height="50" src="assets/shrub.png" width="50" />
+        <span>
+          Shrubs
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Aquatic" class="h-12 w-12 mb-2" height="50"
+          src="assets/aquatic.png"
+          width="50" />
+        <span>
+          Aquatic
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Ferns" class="h-12 w-12 mb-2" height="50"
+          src = "assets/fern.png"
+          ="50" />
+        <span>
+          Ferns
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Succulents" class="h-12 w-12 mb-2" height="50"
+          src="assets/succulent.png"
+          width="50" />
+        <span>
+          Succulents
+        </span>
+      </div>
+      <div class="bg-[#D7ECCD] p-4 rounded-lg flex flex-col items-center">
+        <img alt="Vines" class="h-12 w-12 mb-2" height="50"
+          src="assets/vines.png"
+          width="50" />
+        <span>
+          Vines
+        </span>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-[#B1E09C] flex justify-between items-center p-4 relative">
+    <div class="flex flex-col items-center mx-12">
+      <a href="index.html"><i class="fas fa-home text-black text-2xl"></i></a>
+      <span class="text-black text-sm">Home</span>
+    </div>
+    <div class="bg-white p-4 rounded-full shadow-lg -mt-1">
+      <i class="fas fa-camera text-2xl text-black">
+      </i>
+    </div>
+    <div class="flex flex-col items-center mx-12">
+      <a href="profile.html"><i class="fas fa-user text-black text-2xl"></i></a>
+      <span class="text-black text-sm">Profile</span>
+    </div>
+  </footer>
+</body>
+
+</html>

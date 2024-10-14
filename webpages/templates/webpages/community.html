@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <title>Your Title</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <script>
+    function toggleMenu() {
+     document.getElementById('dropdownMenu').classList.toggle('hidden');
+    }
+   </script>
+  
+</head>
+
+<body class="bg-gray-100 h-screen flex flex-col justify-between">
+   <!-- Header -->
+   <header class="bg-[#B1E09C] flex items-center justify-between p-4">
+    <a href="#"><img alt="Plant logo" class="h-10" height="100" src="assets/logo.png" width="40" /></a>
+    <a href="#"><h1 class="text-black font-bold text-2xl">Plantify</h1></a>
+    <i class="fas fa-bars text-xl cursor-pointer" onclick="toggleMenu()"></i>
+  </header>
+  <!-- Dropdown Menu -->
+  <div class="absolute top-20 right-5 bg-white shadow-md rounded-lg hidden w-60 z-10" id="dropdownMenu">
+    <ul class="p-6">
+     <li class="py-5">
+      <a class="text-black" href="index.html">
+       Home
+      </a>
+     </li>
+     <li class="py-5">
+      <a class="text-black" href="categories.html">
+       Categories
+      </a>
+     </li>
+     <li class="py-5">
+      <a class="text-black" href="community.html">
+       Community
+      </a>
+     </li>
+     <li class="py-5">
+      <a class="text-black" href="bookmark.html">
+       Bookmark
+      </a>
+     </li>
+     <li class="py-5">
+      <a class="text-black" href="welcome.html">
+       Sign Out
+      </a>
+     </li>
+    </ul>
+   </div>
+
+  <!-- Main Content -->
+  <main class="flex-grow bg-white">
+    <html></html>
+<head>
+    <title>Plantify Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 h-screen">
+    <div class="h-full w-full bg-white rounded-lg shadow-md overflow-hidden">
+        <!-- Back Button and Title -->
+        <div class="p-4">
+            <div class="flex items-center mb-4">
+                <i class="fas fa-arrow-left text-xl"></i>
+                <h1 class="ml-2 text-2xl font-bold">Community</h1>
+            </div>
+            <!-- Form -->
+            <form>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Plant Name:</label>
+                    <input class="w-full px-3 py-2 border rounded" placeholder="Enter plant name" type="text"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Location:</label>
+                    <select class="w-full px-3 py-2 border rounded">
+                        <option>Select location</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Date:</label>
+                    <input class="w-full px-3 py-2 border rounded" type="date"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Comments:</label>
+                    <textarea class="w-full px-3 py-2 border rounded" placeholder="Enter comments" rows="3"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Upload Image:</label>
+                    <div class="flex items-center bg-[#B1E09C] p-2 rounded">
+                        <i class="fas fa-image text-xl"></i>
+                        <span class="ml-2 flex-1">No selected file</span>
+                        <i class="fas fa-trash-alt text-xl"></i>
+                    </div>
+                </div>
+                <button class="w-full bg-green-600 text-white py-2 rounded" type="submit">UPLOAD</button>
+            </form>
+        </div>
+</body>
+</html>
+
+  </main>
+
+   <!-- Footer -->
+  <footer class="bg-[#B1E09C] flex justify-between items-center p-4 relative">
+    <div class="flex flex-col items-center mx-12">
+      <a href=" "><i class="fas fa-home text-black text-2xl"></i></a>
+      <span class="text-black text-sm">Home</span>
+    </div>
+    <div class="bg-white p-4 rounded-full shadow-lg -mt-1">
+      <i class="fas fa-camera text-2xl text-black">
+      </i>
+    </div>
+    <div class="flex flex-col items-center mx-12">
+      <a href="#"><i class="fas fa-user text-black text-2xl"></i></a>
+      <span class="text-black text-sm">Profile</span>
+    </div>
+  </footer>
+</body>
+
+</html>

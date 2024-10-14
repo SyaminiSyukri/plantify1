@@ -4,13 +4,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('home')
+    return render(request, 'webpages/index.html')
 
 def categories(request):
-    return HttpResponse('categories')
+    return render(request, 'webpages/categories.html')
 
 def community(request):
-    return HttpResponse('community')
+    return render(request, 'webpages/community.html')
 
 def signout(request):
-    return HttpResponse('signout')
+    return render(request, 'webpages/welcome.html')
